@@ -13,13 +13,13 @@
 						<form action="{{url('belijus2')}}" method="post"></form>
 							@csrf
 						<div class="form-group">
-							<label for="" class="control-label">Nama</label>
+							<label for="" class="control-label"> Nama </label>
 							<input type="text" class="form-control" name="nama">
 						</div>
 						<div class='row no-gutters'>
 							<div class="col-md-6">
 								<div class="form-group">
-									<label for="" class="control-label">Harga</label>
+									<label for="" class="control-label"> Harga </label>
 									<input type="text" class="form-control" name="harga">
 								</div>
 							</div>
