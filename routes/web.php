@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BelijusController;
-
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -83,6 +83,17 @@ Route::get('belijus2/{belijus2}/edit', [BelijusController::class, 'edit']);
 Route::put('belijus2/{belijus2}', [BelijusController::class, 'update']);
 Route::delete('belijus2/{belijus2}', [BelijusController::class, 'destroy']);
 
+Route::get('user', [UserController::class, 'index']);
+Route::get('user/create', [UserController::class, 'create']);
+Route::post('user', [UserController::class, 'store']);
+Route::get('user/{user}', [UserController::class, 'show']);
+Route::get('user/{user}/edit', [UserController::class, 'edit']);
+Route::put('user/{user}', [UserController::class, 'update']);
+Route::delete('user2/{user}', [UserController::class, 'destroy']);
+
 Route::get('testimoni2', [HomeController::class, 'showTestimoni']);
 Route::get('kontakkami2', [HomeController::class, 'showKontakKami']);
+
 Route::get('login2', [AuthController::class, 'showLogin']);
+Route::post('login2', [AuthController::class, 'loginProcess']);
+Route::get('logout', [AuthController::class, 'logout']);

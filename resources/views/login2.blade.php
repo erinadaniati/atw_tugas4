@@ -94,19 +94,21 @@ label {
      <div id="card"> 
         <div id="card-content">
             <div id="card-title">
-    <a href="{{url('layout')}}"><h2>LOGIN</h2></a>
+    <a href="{{url('admin')}}"><h2>LOGIN</h2></a>
     <div class="underline-title"></div>
          </div>
             </div>
-    <form action="{{url('layout')}}" method="post" class="form"> 
+    @include('layouts.utils.notif')
+    <form action="{{url('login2')}}" method="post" class="form">
+    @csrf 
        <div class="form-group">
-         <input class="form-control-lg" id="username" type="text" placeholder="Username" autocomplete="off">
+         <input class="form-control-lg" id="email" type="text" placeholder="email" name="email">
        </div>
        <div class="form-group">
-         <input class="form-control-lg" id="password" type="password" placeholder="Password" autocomplete="off">
+         <input class="form-control-lg" id="password" type="password" placeholder="Password" name="password">
        </div>
     <a href="#"><legend id="forgot-pass">Forgot password?</legend></a>
-    <a href="{{url('layout')}}" id="submit-btn" type="submit" name="submit">Login</a>
+    <a href="{{url('admin')}}" id="submit-btn" type="submit" name="submit">Login</a>
         </form>
     </div>
 

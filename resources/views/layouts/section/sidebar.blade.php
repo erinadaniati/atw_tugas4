@@ -19,12 +19,15 @@
                         <li>
                             <a href="{{url('belijus2')}}">Beli Jus</a>
                         </li>
+                         <li>
+                            <a href="{{url('user')}}">User</a>
+                        </li>
                         <li class="has-sub">
-                            <a class="js-arrow" href="{{url('testimoni2')}}">Testimoni<</a>
+                            <a class="js-arrow" href="{{url('testimoni2')}}">Testimoni</a>
 
-                                <li>
-                                    <a href="{{url('kontakkami2')}}">Kontak Kami</a>
-                                </li>
+                        <li>
+                        <a href="{{url('kontakkami2')}}">Kontak Kami</a>
+                        </li>
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="{{url('login2')}}">Logout</a>
@@ -36,46 +39,8 @@
                                     <a href="button.html">
                                         <i class="fab fa-flickr"></i>Button</a>
                                 </li>
-                                <li>
-                                    <a href="badge.html">
-                                        <i class="fas fa-comment-alt"></i>Badges</a>
-                                </li>
-                                <li>
-                                    <a href="tab.html">
-                                        <i class="far fa-window-maximize"></i>Tabs</a>
-                                </li>
-                                <li>
-                                    <a href="card.html">
-                                        <i class="far fa-id-card"></i>Cards</a>
-                                </li>
-                                <li>
-                                    <a href="alert.html">
-                                        <i class="far fa-bell"></i>Alerts</a>
-                                </li>
-                                <li>
-                                    <a href="progress-bar.html">
-                                        <i class="fas fa-tasks"></i>Progress Bars</a>
-                                </li>
-                                <li>
-                                    <a href="modal.html">
-                                        <i class="far fa-window-restore"></i>Modals</a>
-                                </li>
-                                <li>
-                                    <a href="switch.html">
-                                        <i class="fas fa-toggle-on"></i>Switchs</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">
-                                        <i class="fas fa-th-large"></i>Grids</a>
-                                </li>
-                                <li>
-                                    <a href="fontawesome.html">
-                                        <i class="fab fa-font-awesome"></i>FontAwesome</a>
-                                </li>
-                                <li>
-                                    <a href="typo.html">
-                                        <i class="fas fa-font"></i>Typography</a>
-                                </li>
+                               
+                              
                             </ul>
                         </li>
                     </ul>
