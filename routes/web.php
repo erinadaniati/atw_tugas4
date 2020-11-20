@@ -75,6 +75,10 @@ Route::get('/admin', function () {
 
 Route::get('about2', [HomeController::class, 'showAbout']);
 
+Route::get('test/{belijus2}/{hargaMin?}/{hargaMax?}',[HomeController::class, 'test']);
+
+Route::post('belijus2/filter', [BelijusController::class, 'filter']);
+
 Route::get('belijus2', [BelijusController::class, 'index']);
 Route::get('belijus2/create', [BelijusController::class, 'create']);
 Route::post('belijus2', [BelijusController::class, 'store']);

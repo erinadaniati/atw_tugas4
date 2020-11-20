@@ -39,4 +39,20 @@ class BelijusController extends Controller{
 
 		return redirect('belijus2')->with('succes' , 'Data Berhasil Dihapus');
 	}
+
+	function filter(){
+		$nama = request('nama');
+		$stok = explode(",", request('stok'));
+		$data['harga_min'] = $harga_min = request('harga_min');
+		$data['harga_max'] = $harga_max = request('harga_max');
+		//$data['list_belijus2'] = Belijus::where('nama','like',"%$nama%")->get();
+		//$data['list_belijus2'] = Belijus::whereIn('stok', $stok)->get();
+		//$data['list_belijus2'] = Belijus::whereBetween('harga', [$harga_min, $harga_max])->get();
+		//$data['list_belijus2'] = Belijus::whereIn('stok', '<>', $stok)->get();
+		//$data['list_belijus2'] = Belijus::whereNotIn('stok', $stok)->get();
+		//$data['list_belijus2'] = Belijus::whereNotBetween('harga', [$harga_min, $harga_max])->get();
+		$data['nama'] = $nama;
+		$data['stok'] = request('stok');
+		return view('belijus2.index' , $data);
+	}
 }

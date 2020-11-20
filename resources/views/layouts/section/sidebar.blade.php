@@ -9,7 +9,7 @@
                 <nav class="navbar-sidebar2">
                     <ul class="list-unstyled navbar__list">
                         <li>
-                            <a href="{{url('home2')}}">Home</a>
+                            <a href="{{url('admin')}}">Home</a>
                             
                         </li>
                         <li>

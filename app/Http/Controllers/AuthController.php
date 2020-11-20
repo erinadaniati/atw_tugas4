@@ -17,7 +17,8 @@ class AuthController extends Controller{
 	}
 
 	function logout(){
-		
+		Auth::logout();
+		return redirect('login2');
 	}
 
 	function registration(){
