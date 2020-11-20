@@ -51,6 +51,12 @@ class BelijusController extends Controller{
 		//$data['list_belijus2'] = Belijus::whereIn('stok', '<>', $stok)->get();
 		//$data['list_belijus2'] = Belijus::whereNotIn('stok', $stok)->get();
 		//$data['list_belijus2'] = Belijus::whereNotBetween('harga', [$harga_min, $harga_max])->get();
+		//$data['list_belijus2'] = Belijus::whereNull('stok')->get();
+		//$data['list_belijus2'] = Belijus::whereNotNull('stok')->get();
+		//$data['list_belijus2'] = Belijus::whereDate('created_at', '2020-01-17')->get();
+		//$data['list_belijus2'] = Belijus::whereYear('created_at', '2020')->get();
+		//$data['list_belijus2'] = Belijus::whereMonth('created_at', '01')->get();
+		//$data['list_belijus2'] = Belijus::whereTime('created_at', '15:24:50')->get();
 		$data['nama'] = $nama;
 		$data['stok'] = request('stok');
 		return view('belijus2.index' , $data);

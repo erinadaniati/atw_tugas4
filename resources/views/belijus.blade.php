@@ -96,7 +96,36 @@
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Menu Jus Kami</h2>
-                     <p>is a long established fact that a reader will be distracted by the readable content of a page when looking at </p>
+                     <p>  </p>
+                     <div class="card">
+               <div class="card-header">
+                  Filter
+                  <div class="card-body">
+                     <form action="{{url('admin/belijus2/filter')}}" method="post">
+                        @csrf
+                        <div class="form-group">
+                           <label for="" class="control-label"> Nama </label>
+                           <input type="text" class="form-control" name="nama" value="{{$nama ?? ""}}">
+                        </div>
+                        <div class="form-group">
+                           <label for="" class="control-label"> Stok </label>
+                           <input type="text" class="form-control" name="stok" value="{{$stok ?? ""}}">
+                        </div>
+                        <div class="form-group">
+                           <label for="" class="control-label"> Harga Min </label>
+                           <input type="text" class="form-control" name="harga_min" value="{{$harga_min ?? ""}}">
+                        </div>
+                        <div class="form-group">
+                           <label for="" class="control-label"> Harga Max </label>
+                           <input type="text" class="form-control" name="harga_max" value="{{$harga_max ?? ""}}">
+                        </div>
+
+                        <button class="btn btn-dark float-right"><i class="fa fa-search"></i> Filter </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+
                   </div>
                </div>
             </div>

@@ -95,7 +95,7 @@
                   <div class="test_box">
                      <div class="text-bg">
                         <h1><span>Selamat Datang!</span> <br>Jus Buah Erina</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that</p>
+                        
                         <a class="read_more" href="#">Read More</a>
                      </div>
                   </div>
