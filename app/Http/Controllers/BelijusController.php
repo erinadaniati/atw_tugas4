@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 use App\Models\Belijus;
+use Faker;
 
 class BelijusController extends Controller{
 	function index(){
-		$data['list_belijus2'] = Belijus::all();
+		$id_user = request()->user(); 
+		$data['list_belijus2'] = $user->belijus2;
 		return view('belijus2.index' , $data);
 	}
 	function create(){
@@ -13,6 +15,7 @@ class BelijusController extends Controller{
 	}
 	function store(){
 		$belijus2 = new Belijus;
+		$belijus2->user = request()->user(); 
 		$belijus2->nama = request('nama');
 		$belijus2->harga = request('harga');
 		$belijus2->save();

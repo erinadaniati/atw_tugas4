@@ -12,7 +12,9 @@
 					<div class="card-body">
 						<h3>{{$belijus2->nama}}</h3>
 						<hr>
-						<p>Rp. {{number_format($belijus2->harga)}}</p>
+						<p>Rp. {{number_format($belijus2->harga)}} |
+						   Seller : {{$belijus2->seller->username}}
+						</p>
 					</div>
 				</div>
 			</div>
